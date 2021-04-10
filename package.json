@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Lucas-Duarte-dev/WhatsApp-Clone.git",
+  "author": "Lucas-Duarte-dev <Lucasduarteb2000@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "socket.io": "2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

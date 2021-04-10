@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 1000px) {
-  html {
-    font-size: 90%;
-  }
-}
-
 body {
   height: 100vh;
   display: flex;
@@ -22,7 +16,7 @@ body {
 
 .container {
   width: 1500px;
-  height: 95%;
+  height: 90%;
   margin: 0 auto;
   background: #333;
   display: grid;
@@ -176,8 +170,116 @@ main {
 
 main header {
   background: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+main header .contain-group {
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+
+main header .contain-group .group {
+  margin-left: 0.8rem;
+}
+
+main header .contain-group .group span {
+  font-size: 1.1rem;
+}
+
+main header .contain-group .group p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: rgb(143, 143, 143);
+}
+
+main header .contain-group img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main header .icons {
+  display: flex;
+  align-items: center;
+}
+
+main header .icons img {
+  filter: invert(0.8);
+  width: 1.5rem;
+}
+
+main header .icons img + img {
+  margin-left: 0.8rem;
+  width: 1.2rem;
 }
 
 main .create-message {
   background: #141414;
+  display: flex;
+  width: 100%;
+  padding: 0 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .create-message input {
+  flex: 1;
+  margin: 0 0.8rem;
+  height: 65%;
+  border-radius: 1rem;
+  border: 1px solid rgb(39, 39, 39);
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  background: #3b3b3b;
+  color: #fff;
+  outline: none;
+}
+
+main .create-message input::placeholder {
+  color: rgb(172, 172, 172);
+}
+
+main .create-message img,
+main .create-message .send-message img,
+main .create-message .send-message button img {
+  width: 1.8rem;
+  height: 1.8rem;
+  filter: invert(0.7);
+}
+
+main .create-message button {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+main .content {
+  padding: 2rem;
+  height: 750px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+main .content::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 0.4rem;
+}
+main .content .message {
+  min-height: 2rem;
+  max-height: 7rem;
+  padding: 0.5rem 1rem;
+  background: rgb(108, 231, 108);
+  border-radius: 0.3rem;
+  text-overflow: ellipsis;
+}
+
+main .content .message + .message {
+  margin-top: 0.5rem;
 }
